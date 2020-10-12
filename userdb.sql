@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 29, 2020 at 03:49 PM
+-- Generation Time: Oct 12, 2020 at 11:53 AM
 -- Server version: 10.3.15-MariaDB
 -- PHP Version: 7.3.6
 
@@ -40,7 +40,7 @@ CREATE TABLE `images` (
 --
 
 INSERT INTO `images` (`imgID`, `UserID`, `imgName`, `path`) VALUES
-(9, 2, 'WhatsApp Image 2020-09-22 at 1.07.07 AM.jpeg', 'folder1');
+(11, 3, 'WhatsApp Image 2020-09-08 at 7.01.41 PM (1).jpeg', 'folder2');
 
 -- --------------------------------------------------------
 
@@ -60,7 +60,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`UserID`, `Email`, `Password`) VALUES
 (1, 'abc@gmail.com', '1233444'),
-(2, 'taimoor.hassan@gmail.com', '1234567');
+(2, 'taimoor.hassan@gmail.com', '1234567'),
+(3, 'taimoor@gmail.com', '123456');
 
 --
 -- Indexes for dumped tables
@@ -86,13 +87,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `imgID` int(254) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `imgID` int(254) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `UserID` int(254) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `UserID` int(254) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
